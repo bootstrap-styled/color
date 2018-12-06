@@ -1,10 +1,3 @@
-[![build status]($CI_PROJECT_URL/badges/v$PACKAGE_VERSION/build.svg)]($CI_PROJECT_URL/commits/v$PACKAGE_VERSION)
-[![coverage report]($CI_PROJECT_URL/badges/v$PACKAGE_VERSION/coverage.svg)]($CI_PROJECT_URL/commits/v$PACKAGE_VERSION)
+[![Build Status](https://travis-ci.org/bootstrap-styled/color.svg?branch=master)](https://travis-ci.org/bootstrap-styled/color) [![npm Version](https://img.shields.io/npm/v/@bootstrap-styled/color.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/color) [![License](https://img.shields.io/npm/l/@bootstrap-styled/color.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/color) [![npm Version](https://img.shields.io/node/v/@bootstrap-styled/color.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/color) [![Module formats](https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/color)
 
-![image](https://img.shields.io/badge/version-$PACKAGE_VERSION-green.svg)
-![image](https://img.shields.io/badge/node-$NODE_VERSION-brightgreen.svg)
-![image](https://img.shields.io/badge/npm-$NPM_VERSION-red.svg)
-![image](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
-![image]($IMG_SHIELD_PUBLISHING)
-
-$PACKAGE_DESCRIPTION.
+Qix/color wrapper for bootstrap-styled, it help you use color without worrying if the provided css color can be manipulated with color.
