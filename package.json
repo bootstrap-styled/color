@@ -1,6 +1,6 @@
 {
   "name": "@bootstrap-styled/color",
-  "version": "0.0.0-development",
+  "version": "1.0.1",
   "description": "Qix/color wrapper for bootstrap-styled, it help you use color without worrying if the provided css color can be manipulated with color.",
   "main": "lib/index.js",
   "jsnext:main": "dist/@bootstrap-styled/color.esm.js",
