@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/bootstrap-styled/color/compare/v1.0.5...v1.0.6) (2018-12-06)
+
+
+### Bug Fixes
+
+* **wrapper:** fix wrapper and added babel plugin array include ([638e6ed](https://github.com/bootstrap-styled/color/commit/638e6ed))
+
 ## [1.0.5](https://github.com/bootstrap-styled/color/compare/v1.0.4...v1.0.5) (2018-12-06)
 
 
