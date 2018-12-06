@@ -1,39 +1,22 @@
-/**
- * Testing example
- */
-import DemoClass from '../index';
+import Color from 'color';
+import ColorWrapper, { ColorMock } from '../index';
 
-describe('DemoClass', () => {
-  let demoClass;
-  beforeEach(() => {
-    demoClass = new DemoClass();
+describe('ColorWrapper', () => {
+  it('should be the ColorMock class', () => {
+    const color = ColorWrapper('linear-gradient(#FFF, #000)');
+    expect(color instanceof ColorMock).toBe(true);
   });
-  it('should be the DemoClass', () => {
-    expect(demoClass instanceof DemoClass).toBe(true);
+  it('should be the same color', () => {
+    const color = ColorWrapper('linear-gradient(#FFF, #000)');
+    expect(color.darken()).toEqual('linear-gradient(#FFF, #000)');
   });
-  it('should be the static test', () => {
-    expect(demoClass.getTestStatic()).toBe('This is a static test');
+  it('should use toString and have equal value', () => {
+    const color = ColorWrapper('linear-gradient(#FFF, #000)');
+    expect(color.darken().toString()).toEqual(color.toString());
   });
-  it('should be the test attribute', () => {
-    expect(demoClass.getTestAttribute()).toBe('This is a test attribute');
-  });
-  it('should set the test attribute', () => {
-    demoClass.setTestAttribute('test');
-    expect(demoClass.getTestAttribute()).toBe('test');
-  });
-  it('should include a in list', () => {
-    expect(demoClass.hasInList('a')).toBe(true);
-  });
-  it('should get replaced env', () => {
-    expect(demoClass.getReplacedEnv()).toBe('test');
-  });
-  it('should get rest from spread', () => {
-    expect(demoClass.getIsSpreadActive()).toEqual(true);
-  });
-  it('should get rest from spread', () => {
-    expect(demoClass.getRest()).toEqual({
-      isTestLiving: true,
-      list: ['a', 'b'],
-    });
+  it('should use the real Color', () => {
+    const color = ColorWrapper('#f00');
+    const color2 = Color('#f00');
+    expect(color.darken(0.5).toString()).toEqual(color2.darken(0.5).toString());
   });
 });

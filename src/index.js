@@ -1,45 +1,44 @@
+import RealColor from 'color';
+
 /**
- * Code your first module here
+ * @public
+ * @name ColorMock
+ * @description it is a mock of color, except methods does only return the unmanipulated string
+ * @return {ColorMock}
  */
-
-export default class DemoClass {
-  static testStatic = 'This is a static test';
-
-  testAttribute = 'This is a test attribute';
-
-  state = {
-    list: ['a', 'b'],
-    isSpreadActive: true,
-    isTestLiving: true,
-  };
-
-  hasInList(value) {
-    return this.state.list.includes(value);
+export class ColorMock {
+  constructor(color) {
+    this.color = color;
+    Object.keys(RealColor.prototype).forEach((method) => {
+      ColorMock.prototype[method] = this.toString;
+    });
   }
-
-  getReplacedEnv() {
-    return process.env.NODE_ENV;
+  toString() {
+    return this.color;
   }
+}
 
-  getIsSpreadActive() {
-    const { isSpreadActive, ...rest } = this.state; // eslint-disable-line no-unused-vars
-    return isSpreadActive;
+/**
+ * @public
+ * @name ColorWrapper
+ * @description it will prevent Color to fail on error if the value cannot be manipulated
+ * @param color {String|Number}
+ * @returns {Color|ColorMock}
+ * @example
+ * import Color from '$PACKAGE_NAME';
+ * const color = Color('linear-gradient(#fff, #000)');
+ * // color = 'linear-gradient(#fff, #000)'
+ * color.darken(0.5);
+ * // The value is never changed as it is not valid for Color
+ * // color = 'linear-gradient(#fff, #000)'
+ * const realColor = Color('#fff').darken(0.5);
+ * // The value is valid for Color so it just use it
+ * // realColor = 'hsl(0, 100%, 30%)'
+ * @constructor
+ */
+export default function ColorWrapper(color) {
+  if (color.indexOf('linear-gradient') === -1) {
+    return RealColor(color);
   }
-
-  getRest() {
-    const { isSpreadActive, ...rest } = this.state;
-    return rest;
-  }
-
-  getTestStatic() {
-    return DemoClass.testStatic;
-  }
-
-  getTestAttribute() {
-    return this.testAttribute;
-  }
-
-  setTestAttribute(testAttribute) {
-    this.testAttribute = testAttribute;
-  }
+  return new ColorMock(color);
 }
