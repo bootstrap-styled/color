@@ -9,11 +9,75 @@ import Color from 'color';
 export class ColorMock {
   constructor(color) {
     this.color = color;
-    Object.keys(Color.prototype).forEach((method) => {
-      if (method !== 'toString') {
-        ColorMock.prototype[method] = () => new ColorMock(this.color);
-      }
-    });
+  }
+  hsl() {
+    return this;
+  }
+  isLight() {
+    return false;
+  }
+  isDark() {
+    return false;
+  }
+  negate() {
+    return this;
+  }
+  lighten() {
+    return this;
+  }
+  darken() {
+    return this;
+  }
+  saturate() {
+    return this;
+  }
+  desaturate() {
+    return this;
+  }
+  grayscale() {
+    return this;
+  }
+  whiten() {
+    return this;
+  }
+  blacken() {
+    return this;
+  }
+  fade() {
+    return this;
+  }
+  opaquer() {
+    return this;
+  }
+  rotate() {
+    return this;
+  }
+  contrast() {
+    return 10;
+  }
+  luminosity() {
+    return 0.5;
+  }
+  mix() {
+    return this;
+  }
+  blue() {
+    return this.color;
+  }
+  green() {
+    return this.color;
+  }
+  red() {
+    return this.color;
+  }
+  hex() {
+    return this.color;
+  }
+  rgbNumber() {
+    return this.color;
+  }
+  rgb() {
+    return this.color;
   }
   toString() {
     return this.color;
