@@ -10,78 +10,30 @@ export class ColorMock {
   constructor(color) {
     this.color = color;
   }
-  hsl() {
-    return this;
-  }
-  isLight() {
-    return false;
-  }
-  isDark() {
-    return false;
-  }
-  negate() {
-    return this;
-  }
-  lighten() {
-    return this;
-  }
-  darken() {
-    return this;
-  }
-  saturate() {
-    return this;
-  }
-  desaturate() {
-    return this;
-  }
-  grayscale() {
-    return this;
-  }
-  whiten() {
-    return this;
-  }
-  blacken() {
-    return this;
-  }
-  fade() {
-    return this;
-  }
-  opaquer() {
-    return this;
-  }
-  rotate() {
-    return this;
-  }
-  contrast() {
-    return 10;
-  }
-  luminosity() {
-    return 0.5;
-  }
-  mix() {
-    return this;
-  }
-  blue() {
-    return this.color;
-  }
-  green() {
-    return this.color;
-  }
-  red() {
-    return this.color;
-  }
-  hex() {
-    return this.color;
-  }
-  rgbNumber() {
-    return this.color;
-  }
-  rgb() {
-    return this.color;
-  }
-  toString() {
-    return this.color;
-  }
+  hsl = () => this
+  isLight = () => false
+  isDark = () => false
+  negate = () => this
+  lighten = () => this
+  darken = () => this
+  saturate = () => this
+  desaturate = () => this
+  grayscale = () => this
+  whiten = () => this
+  blacken = () => this
+  fade = () => this
+  opaquer = () => this
+  rotate = () => this
+  contrast = () => 10
+  luminosity = () => 0.5
+  mix = () => this
+  blue = () => this.toString()
+  green = () => this.toString()
+  red = () => this.toString()
+  hex = () => this.toString()
+  rgbNumber = () => this.toString()
+  rgb = () => this.toString()
+  toString = () => this.color
 }
 
 /**

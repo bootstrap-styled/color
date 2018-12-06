@@ -22,6 +22,10 @@ describe('ColorWrapper', () => {
     const color = ColorWrapper('linear-gradient(#FFF, #000)');
     expect(color.rgb()).toEqual(color.toString());
   });
+  it('should end with a string when calling .darken().rgb()', () => {
+    const color = ColorWrapper('linear-gradient(#FFF, #000)');
+    expect(color.darken().rgb()).toEqual(color.toString());
+  });
   it('should use the real Color', () => {
     const color = ColorWrapper('#f00');
     const color2 = Color('#f00');
