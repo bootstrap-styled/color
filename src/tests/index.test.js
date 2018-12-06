@@ -16,7 +16,16 @@ describe('ColorWrapper', () => {
   });
   it('should use toString after N pipe and have equal value', () => {
     const color = ColorWrapper('linear-gradient(#FFF, #000)');
-    expect(color.darken().rgb().lighten().toString()).toEqual(color.toString());
+    expect(color.darken().lighten().darken().toString()).toEqual(color.toString());
+  });
+  it('should end with a string when calling .rgb()', () => {
+    const color = ColorWrapper('linear-gradient(#FFF, #000)');
+    expect(color.rgb()).toEqual(color.toString());
+  });
+  it('should use the real Color', () => {
+    const color = ColorWrapper('#f00');
+    const color2 = Color('#f00');
+    expect(color.darken(0.5).toString()).toEqual(color2.darken(0.5).toString());
   });
   it('should use the real Color', () => {
     const color = ColorWrapper('#f00');
