@@ -1,6 +1,6 @@
 {
   "name": "@yeutech/color",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Qix/color wrapper for bootstrap-styled, it help you use color without worrying if the provided css color can be manipulated with color.",
   "main": "lib/index.js",
   "jsnext:main": "dist/@yeutech/color.esm.js",
@@ -38,7 +38,8 @@
     "prestyleguide": "npm run jsdoc",
     "styleguide": "styleguidist server",
     "prestyleguide:build": "npm run jsdoc",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "postinstall": "node -e \"console.log('\\u001b[31m@yeutech/color is deprecated, use @bootstrap-styled/color instead.')\" || exit 0"
   },
   "repository": {
     "type": "git",
