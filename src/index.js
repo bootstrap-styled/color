@@ -61,7 +61,7 @@ export class ColorMock {
  */
 export default function ColorWrapper(color) {
   if (typeof color === 'string' && color.indexOf('linear-gradient') !== -1) {
-    return ColorMock(color);
+    return new ColorMock(color);
   }
-  return new Color(color);
+  return Color(color);
 }
