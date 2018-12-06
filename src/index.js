@@ -16,6 +16,7 @@ export class ColorMock {
   negate = () => this
   lighten = () => this
   darken = () => this
+  alpha = () => this
   saturate = () => this
   desaturate = () => this
   grayscale = () => this
