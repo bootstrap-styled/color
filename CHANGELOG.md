@@ -1,3 +1,12 @@
+## [1.0.5](https://github.com/bootstrap-styled/color/compare/v1.0.4...v1.0.5) (2018-12-06)
+
+
+### Bug Fixes
+
+* **dependencies:** revert to color 1.0.3 ([e22640d](https://github.com/bootstrap-styled/color/commit/e22640d))
+* **wrapper:** fix wrapper ([3dd5aac](https://github.com/bootstrap-styled/color/commit/3dd5aac))
+* **wrapper:** fix wrapper ([f6c43f9](https://github.com/bootstrap-styled/color/commit/f6c43f9))
+
 ## [1.0.4](https://github.com/bootstrap-styled/color/compare/v1.0.3...v1.0.4) (2018-12-06)
 
 
