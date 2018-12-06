@@ -60,8 +60,8 @@ export class ColorMock {
  * @constructor
  */
 export default function ColorWrapper(color) {
-  if (typeof color === 'string' && color.indexOf('linear-gradient') === -1) {
-    return Color(color);
+  if (typeof color === 'string' && color.indexOf('linear-gradient') !== -1) {
+    return ColorMock(color);
   }
-  return new ColorMock(color);
+  return new Color(color);
 }
