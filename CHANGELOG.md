@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/bootstrap-styled/color/compare/v1.0.3...v1.0.4) (2018-12-06)
+
+
+### Bug Fixes
+
+* **mock:** shorter synthax ([12f1101](https://github.com/bootstrap-styled/color/commit/12f1101))
+
 ## [1.0.3](https://github.com/bootstrap-styled/color/compare/v1.0.2...v1.0.3) (2018-12-06)
 
 
