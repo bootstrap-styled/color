@@ -289,24 +289,5 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "contributors": [],
-  "transitive": {
-    "name": "color",
-    "scope": "bootstrap-styled",
-    "scopedName": "@bootstrap-styled/color",
-    "jsnext:main": "dist/@bootstrap-styled/color.esm.js",
-    "module": "dist/@bootstrap-styled/color.esm.js",
-    "homepage": "https://bootstrap-styled.github.io/color",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/bootstrap-styled/color.git"
-    },
-    "bugs": {
-      "url": "https://github.com/bootstrap-styled/color/issues"
-    },
-    "publishConfig": {
-      "access": "public",
-      "registry": "https://registry.npmjs.org"
-    }
-  }
+  "contributors": []
 }
