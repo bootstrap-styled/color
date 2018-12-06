@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/bootstrap-styled/color/compare/v1.0.1...v1.0.2) (2018-12-06)
+
+
+### Bug Fixes
+
+* **ColorMock:** fix mock ([a1217c3](https://github.com/bootstrap-styled/color/commit/a1217c3))
+
 ## [1.0.1](https://github.com/bootstrap-styled/color/compare/v1.0.0...v1.0.1) (2018-12-06)
 
 
