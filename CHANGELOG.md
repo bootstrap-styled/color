@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/bootstrap-styled/color/compare/v1.0.6...v1.0.7) (2018-12-16)
+
+
+### Bug Fixes
+
+* **rollup:** Upgrade rollup to latest with all plugins ([35d8724](https://github.com/bootstrap-styled/color/commit/35d8724))
+
 ## [1.0.6](https://github.com/bootstrap-styled/color/compare/v1.0.5...v1.0.6) (2018-12-06)
 
 
