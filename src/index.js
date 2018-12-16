@@ -10,30 +10,55 @@ export class ColorMock {
   constructor(color) {
     this.color = color;
   }
+
   hsl = () => this
+
   isLight = () => false
+
   isDark = () => false
+
   negate = () => this
+
   lighten = () => this
+
   darken = () => this
+
   alpha = () => this
+
   saturate = () => this
+
   desaturate = () => this
+
   grayscale = () => this
+
   whiten = () => this
+
   blacken = () => this
+
   fade = () => this
+
   opaquer = () => this
+
   rotate = () => this
+
   contrast = () => 10
+
   luminosity = () => 0.5
+
   mix = () => this
+
   blue = () => this.toString()
+
   green = () => this.toString()
+
   red = () => this.toString()
+
   hex = () => this.toString()
+
   rgbNumber = () => this.toString()
+
   rgb = () => this.toString()
+
   toString = () => this.color
 }
 
