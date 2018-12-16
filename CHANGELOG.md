@@ -1,3 +1,11 @@
+## [1.0.8](https://github.com/bootstrap-styled/color/compare/v1.0.7...v1.0.8) (2018-12-16)
+
+
+### Bug Fixes
+
+* **test:** fix test failing ([84faa9a](https://github.com/bootstrap-styled/color/commit/84faa9a))
+* **test:** upgrade jest and jest-sonar-reporter ([a705ee0](https://github.com/bootstrap-styled/color/commit/a705ee0))
+
 ## [1.0.7](https://github.com/bootstrap-styled/color/compare/v1.0.6...v1.0.7) (2018-12-16)
 
 ### Bug Fixes
