@@ -180,7 +180,7 @@
     "@babel/plugin-transform-react-inline-elements": "^7.8.3",
     "@babel/plugin-transform-runtime": "^7.8.3",
     "@babel/preset-env": "^7.8.6",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-react": "^7.8.3",
     "@rollup-umd/documentation": "^1.0.17",
     "@semantic-release/changelog": "^3.0.1",
     "@semantic-release/git": "^7.0.5",
