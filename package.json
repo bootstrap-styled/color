@@ -178,7 +178,7 @@
     "@babel/plugin-transform-modules-commonjs": "^7.8.3",
     "@babel/plugin-transform-react-constant-elements": "^7.8.3",
     "@babel/plugin-transform-react-inline-elements": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.8.3",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "@rollup-umd/documentation": "^1.0.17",
